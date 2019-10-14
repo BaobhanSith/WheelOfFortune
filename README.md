@@ -1,1 +1,32 @@
 # WheelOfFortune
+
+## Tasks (?)
+- rspec ./wad_wof_spec_01.rb:32 # WOF_Game::Game#WOF game should create a method called start
+- rspec ./wad_wof_spec_01.rb:35 # WOF_Game::Game#WOF game should display a welcome message when start method called
+- rspec ./wad_wof_spec_01.rb:39 # WOF_Game::Game#WOF game should contain a method created_by which returns the student names
+- rspec ./wad_wof_spec_01.rb:43 # WOF_Game::Game#WOF game should contain a method student_id which returns the student ID numbers
+- rspec ./wad_wof_spec_01.rb:47 # WOF_Game::Game#WOF game should display a created by message within method start
+- rspec ./wad_wof_spec_01.rb:51 # WOF_Game::Game#WOF game should return menu options when method menuoptions called
+- rspec ./wad_wof_spec_01.rb:55 # WOF_Game::Game#WOF game should return menu instructions when method menuprompt called
+- rspec ./wad_wof_spec_01.rb:59 # WOF_Game::Game#WOF game should display begin game message
+- rspec ./wad_wof_spec_01.rb:63 # WOF_Game::Game#WOF game should display new game created message
+- rspec ./wad_wof_spec_01.rb:67 # WOF_Game::Game#WOF game should display analysis message
+- rspec ./wad_wof_spec_01.rb:71 # WOF_Game::Game#WOF game should send a finish message
+- rspec ./wad_wof_spec_01.rb:75 # WOF_Game::Game#WOF game should display a invalid input error message
+- rspec ./wad_wof_spec_01.rb:79 # WOF_Game::Game#WOF game should create a method resetgame
+- rspec ./wad_wof_spec_01.rb:82 # WOF_Game::Game#WOF game should set object variables to correct value
+- rspec ./wad_wof_spec_01.rb:93 # WOF_Game::Game#WOF game should create a method readwordfile which passes name of file to read
+- rspec ./wad_wof_spec_01.rb:96 # WOF_Game::Game#WOF game should create a method readwordfile which returns number of words/phrases
+- rspec ./wad_wof_spec_01.rb:100 # WOF_Game::Game#WOF game should create a method readwordfile which writes words/phrases into wordtable
+- rspec ./wad_wof_spec_01.rb:104 # WOF_Game::Game#WOF game should create a method gensecretword
+- rspec ./wad_wof_spec_01.rb:109 # WOF_Game::Game#WOF game should create a method gensecretword which returns one of the words/phrases from wordtable
+- rspec ./wad_wof_spec_01.rb:125 # WOF_Game::Game#WOF game should return true or false that secretword is upcase when checkwordupcase method called
+- rspec ./wad_wof_spec_01.rb:137 # WOF_Game::Game#WOF game should create a method setsecretword which receives a value to set object variable secretword
+- rspec ./wad_wof_spec_01.rb:140 # WOF_Game::Game#WOF game should create a method getsecretword which returns the value set within object variable secretword
+- rspec ./wad_wof_spec_01.rb:145 # WOF_Game::Game#WOF game should create a template [_] for a selected word/phrase
+- rspec ./wad_wof_spec_01.rb:160 # WOF_Game::Game#WOF game should return selected secret word and its template within an array when getsecrettemplate method called
+- rspec ./wad_wof_spec_01.rb:172 # WOF_Game::Game#WOF game should create a method incrementturn which increase turn by 1
+- rspec ./wad_wof_spec_01.rb:177 # WOF_Game::Game#WOF game should create a method getturnsleft which increase turn by 1
+- rspec ./wad_wof_spec_01.rb:183 # WOF_Game::Game#WOF game should return player wins message when displaywinner method called with TRUE parameter
+- rspec ./wad_wof_spec_01.rb:187 # WOF_Game::Game#WOF game should return computer wins message when displaywinner method called with FALSE parameter
+- rspec ./wad_wof_spec_01.rb:191 # WOF_Game::Game#WOF game should return each of your group's student name and id 'Nigel Beacham (123456789)' by index when displaycredits method called
