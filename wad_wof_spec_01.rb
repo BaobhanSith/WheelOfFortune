@@ -38,11 +38,11 @@ module WOF_Game
 			end
 			it "should contain a method created_by which returns the student names" do
 				myname = @game.created_by
-				myname.should == "Nigel Beacham, Fred Bloggs"	# -----Change text to your own names-----
+				myname.should == "Atanas Komsiyski,Aleksandra Nenkova,Stanislav Stoyanov,Reece Tait"	# -----Change text to your own names-----
 			end
 			it "should contain a method student_id which returns the student ID numbers" do
 				studentid = @game.student_id
-				studentid.should == "123456789, 987654321"		# -----Change ID to your own student ID numbers-----
+				studentid.should == "51985145,51984461,51985020,51982218"		# -----Change ID to your own student ID numbers-----
 			end
 			it "should display a created by message within method start" do
 				@output.should_receive(:puts).with("Created by: #{@game.created_by} (#{@game.student_id})")
