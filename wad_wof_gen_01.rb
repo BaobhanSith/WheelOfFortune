@@ -15,6 +15,10 @@ module WOF_Game
 			@played = 0
 			@score = 0
 		end
+
+		def displaytemplate
+			@output.puts "#{@template}"   
+		end 
 		
 		def getguess
 			guess = @input.gets.chomp.upcase
@@ -24,6 +28,54 @@ module WOF_Game
 			if guess != ""
 				@resulta = @resulta.to_a.push "#{guess}"
 			end
+		end
+
+		def charinword(guess)
+			chars = @secretword.split('')
+			amount = 0
+			chars.each do |c|
+				if guess == c
+					return 1
+				end
+			end
+			return 0
+		end
+
+		def showcharinword(guess)
+			i = 1
+			chars = @secretword.split('')
+			chars.each do |c|
+				if guess == c
+					@template[i] = guess
+				end
+				i += 1
+			end
+		end
+
+		def checkifwon
+			temp = @template.split('')
+			temp.each do |t|
+				if t == "_"
+					return 0
+				end
+			end
+			return 1
+		end
+
+		def incrementplayed
+			@played += 1
+		end
+
+		def incrementscore
+			@score += 1
+		end
+
+		def revealword
+			@output.puts "The word was #{@secretword}"
+		end
+
+		def displayanalysis
+			@output.puts "#{displaygameanalysis}"
 		end
 		
 		# Any code/methods aimed at passing the RSpect tests should be added below.
@@ -153,8 +205,8 @@ module WOF_Game
 
 		# Sets the turnsleft object to the value of the turnsleft variable then subtracts one from the number of goes avaliable
 		def getturnsleft
-			@turnsleft = turnsleft
-			@turnsleft = GOES - 1 # Sets the value of the turnsleft object to the amount of goes minus 1
+			@turnsleft = GOES - @turn # Sets the value of the turnsleft object to the amount of goes minus 1
+			return @turnsleft
 		end
 
 		# Displays a message depending on if the player has won or not
